@@ -1,4 +1,4 @@
-# Personal Website
+# Evaluator Website
 
 ## Development
 
