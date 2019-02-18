@@ -91,7 +91,6 @@ export default {
 	--color-gray-00: hsla(225, 6.25%, 0%, 1);
 
 	--color-jade: hsla(135, 50%, 50%, 1);
-	--color-jade: #3fbf5f;
 	--color-ruby: hsla(360, 50%, 50%, 1);
 }
 
