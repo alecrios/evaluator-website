@@ -26,6 +26,8 @@
 					disabled
 				>
 			</div>
+
+			<div class="modal__tag">Live Demo</div>
 		</div>
 	</div>
 </template>
@@ -84,6 +86,7 @@ export default {
 }
 
 .modal {
+	position: relative;
 	font-family: BlinkMacSystemFont, 'Segoe UI', -apple-system, 'Roboto', sans-serif;
 	background-color: var(--color-gray-02);
 	width: 100%;
@@ -95,6 +98,22 @@ export default {
 
 .modal__box {
 	position: relative;
+}
+
+.modal__tag {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: .75rem;
+	line-height: 1.25rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: .03125rem;
+	color: var(--color-gray-02);
+	background-color: var(--color-gray-11);
+	padding: 0 .375rem;
+	border-radius: 0 .25rem 0 .25rem;
+	pointer-events: none;
 }
 
 .modal__icon {
