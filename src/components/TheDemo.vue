@@ -109,9 +109,9 @@ export default {
 	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: .03125rem;
-	color: var(--color-gray-02);
-	background-color: var(--color-gray-11);
-	padding: 0 .375rem;
+	color: var(--color-gray-11);
+	background-color: var(--color-gray-03);
+	padding: .125rem .5rem;
 	border-radius: 0 .25rem 0 .25rem;
 	pointer-events: none;
 }
