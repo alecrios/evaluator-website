@@ -33,9 +33,7 @@
 </template>
 
 <script>
-import Evaluator from 'evaluator.js';
-
-const evaluator = new Evaluator();
+import evaluator from 'evaluator.js';
 
 export default {
 	name: 'TheDemo',
@@ -48,7 +46,7 @@ export default {
 	computed: {
 		result() {
 			try {
-				return evaluator.evaluate(this.input);
+				return evaluator(this.input);
 			} catch (error) {
 				return error;
 			}
