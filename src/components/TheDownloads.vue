@@ -109,6 +109,7 @@ export default {
 	font-size: .875rem;
 	color: var(--color-gray-09);
 	white-space: nowrap;
+	text-decoration: underline;
 }
 
 .download__link:hover .download__secondary-text {

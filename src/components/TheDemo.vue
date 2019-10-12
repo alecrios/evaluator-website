@@ -1,5 +1,5 @@
 <template>
-	<div class="demo">
+	<div :class="['demo', { 'is-visible': isVisible }]">
 		<div class="modal">
 			<div class="modal__box">
 				<input
@@ -39,6 +39,7 @@ export default {
 	name: 'TheDemo',
 	data() {
 		return {
+			isVisible: false,
 			input: '',
 			showError: false,
 		};
@@ -69,6 +70,7 @@ export default {
 		},
 	},
 	mounted() {
+		this.isVisible = true;
 		this.$refs.input.focus();
 	},
 };
@@ -81,6 +83,16 @@ export default {
 	align-items: center;
 	justify-content: center;
 	padding: 3.125vw 1.5rem;
+	opacity: 0;
+	transform: scale(.75) translateY(25%);
+	transition:
+		opacity 500ms cubic-bezier(.215, .61, .355, 1),
+		transform 500ms cubic-bezier(.215, .61, .355, 1);
+}
+
+.demo.is-visible {
+	opacity: 1;
+	transform: none;
 }
 
 .modal {
