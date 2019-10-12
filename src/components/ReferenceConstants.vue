@@ -1,5 +1,5 @@
 <template>
-	<Reference>
+	<Reference id="constants">
 		<h2>Constants</h2>
 
 		<BaseTable>

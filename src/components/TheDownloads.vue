@@ -61,15 +61,16 @@ export default {
 .download__button {
 	position: relative;
 	display: flex;
-	border: .125rem solid var(--color-gray-11);
+	background-color: var(--color-gray-11);
 	padding: .75rem 1rem;
 	cursor: pointer;
 	margin-bottom: .75rem;
-	transition: border-color 100ms ease;
+	box-shadow: 0 .25rem .5rem 0 hsla(0, 0%, 0%, .25);
+	transition: background-color 250ms ease;
 }
 
 .download__button:hover {
-	border-color: var(--color-jade);
+	background-color: var(--color-jade);
 }
 
 .download__icon {
@@ -79,25 +80,24 @@ export default {
 }
 
 .download__path {
-	fill: var(--color-gray-11);
-	transition: fill 100ms ease;
+	fill: var(--color-gray-02);
+	transition: fill 250ms ease;
 }
 
 .download__button:hover .download__path {
-	fill: var(--color-jade);
+	fill: var(--color-gray-02);
 }
 
 .download__text {
 	font-size: 1rem;
 	font-weight: 500;
-	letter-spacing: .03125rem;
 	white-space: nowrap;
-	color: var(--color-gray-11);
+	color: var(--color-gray-02);
 	transition: color 100ms ease;
 }
 
 .download__button:hover .download__text {
-	color: var(--color-jade);
+	color: var(--color-gray-02);
 }
 
 .download__link {

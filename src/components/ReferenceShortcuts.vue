@@ -1,5 +1,5 @@
 <template>
-	<Reference>
+	<Reference id="shortcuts">
 		<h2>App Shortcuts</h2>
 
 		<BaseTable>
@@ -33,12 +33,12 @@
 
 				<tr>
 					<td>Shift + Enter</td>
-					<td>Create expression with result</td>
+					<td>Use result as expression</td>
 				</tr>
 
 				<tr>
 					<td>Shift + Backspace</td>
-					<td>Clear</td>
+					<td>Clear expression</td>
 				</tr>
 			</tbody>
 		</BaseTable>

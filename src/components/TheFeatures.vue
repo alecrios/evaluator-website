@@ -51,7 +51,7 @@ export default {
 .features {
 	max-width: 64rem;
 	margin: 0 auto;
-	padding: 1.5rem 0;
+	padding: 3rem 0;
 }
 
 .container {

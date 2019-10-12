@@ -36,6 +36,7 @@ export default {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding: 1.5rem 0;
 }
 
 .intro__text {
