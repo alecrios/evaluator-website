@@ -12,13 +12,8 @@
 
 			<tbody>
 				<tr>
-					<td>Command + Space</td>
-					<td>Show/hide (macOS)</td>
-				</tr>
-
-				<tr>
-					<td>Control + Space</td>
-					<td>Show/hide (Windows)</td>
+					<td>Alt + Space</td>
+					<td>Show/hide</td>
 				</tr>
 
 				<tr>
