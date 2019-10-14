@@ -13,14 +13,14 @@
 			<div class="col xs-12 sm-6 lg-3">
 				<Feature
 					title="Quick"
-					body="Expressions are evaluated in realtime as you type."
+					body="Expressions are evaluated in real time as you type."
 				/>
 			</div>
 
 			<div class="col xs-12 sm-6 lg-3">
 				<Feature
 					title="Capable"
-					body="Every major math operation is fully supported."
+					body="Many operators, constants, and methods are supported."
 				/>
 			</div>
 

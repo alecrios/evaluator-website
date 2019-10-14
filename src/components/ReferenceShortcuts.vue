@@ -11,34 +11,9 @@
 			</thead>
 
 			<tbody>
-				<tr>
-					<td>Alt + Space</td>
-					<td>Show/hide</td>
-				</tr>
-
-				<tr>
-					<td>Esc</td>
-					<td>Hide</td>
-				</tr>
-
-				<tr>
-					<td>Shift + Esc</td>
-					<td>Recenter</td>
-				</tr>
-
-				<tr>
-					<td>Enter</td>
-					<td>Copy result and hide</td>
-				</tr>
-
-				<tr>
-					<td>Shift + Enter</td>
-					<td>Use result as expression</td>
-				</tr>
-
-				<tr>
-					<td>Shift + Backspace</td>
-					<td>Clear expression</td>
+				<tr v-for="shortcut in shortcuts" :key="shortcut.name">
+					<td>{{ shortcut.name }}</td>
+					<td>{{ shortcut.description }}</td>
 				</tr>
 			</tbody>
 		</BaseTable>
@@ -54,6 +29,36 @@ export default {
 	components: {
 		Reference,
 		BaseTable,
+	},
+	data() {
+		return {
+			shortcuts: [
+				{
+					name: 'Alt + Space',
+					description: 'Show / Hide',
+				},
+				{
+					name: 'Escape',
+					description: 'Hide',
+				},
+				{
+					name: 'Shift + Escape',
+					description: 'Recenter',
+				},
+				{
+					name: 'Enter',
+					description: 'Copy Result and Hide',
+				},
+				{
+					name: 'Shift + Enter',
+					description: 'Use Result as Expression',
+				},
+				{
+					name: 'Shift + Backspace',
+					description: 'Clear Expression',
+				},
+			],
+		};
 	},
 };
 </script>

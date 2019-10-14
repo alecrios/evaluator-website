@@ -5,6 +5,7 @@
 				<input
 					ref="input"
 					class="modal__field modal__expression"
+					spellcheck="false"
 					type="text"
 					placeholder="Type an expression..."
 					:value="input"
@@ -20,6 +21,7 @@
 			<div class="modal__box">
 				<input
 					class="modal__field modal__result"
+					spellcheck="false"
 					:data-is-error="resultIsError"
 					type="text"
 					:value="output"

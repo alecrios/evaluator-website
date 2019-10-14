@@ -14,7 +14,7 @@ export default {
 <style scoped>
 .reference {
 	padding: 3rem 1.5rem;
-	max-width: 26rem;
+	max-width: 32rem;
 	margin: 0 auto;
 }
 </style>

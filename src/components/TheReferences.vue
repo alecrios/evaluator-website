@@ -3,6 +3,7 @@
 		<ReferenceShortcuts/>
 		<ReferenceOperators/>
 		<ReferenceConstants/>
+		<ReferenceMethods/>
 	</div>
 </template>
 
@@ -10,6 +11,7 @@
 import ReferenceShortcuts from '@/components/ReferenceShortcuts.vue';
 import ReferenceOperators from '@/components/ReferenceOperators.vue';
 import ReferenceConstants from '@/components/ReferenceConstants.vue';
+import ReferenceMethods from '@/components/ReferenceMethods.vue';
 
 export default {
 	name: 'TheReferences',
@@ -17,6 +19,7 @@ export default {
 		ReferenceShortcuts,
 		ReferenceOperators,
 		ReferenceConstants,
+		ReferenceMethods,
 	},
 };
 </script>

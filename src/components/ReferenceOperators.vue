@@ -6,44 +6,14 @@
 			<thead>
 				<tr>
 					<th>Operator</th>
-					<th>Operation</th>
+					<th>Description</th>
 				</tr>
 			</thead>
 
 			<tbody>
-				<tr>
-					<td>+</td>
-					<td>Addition</td>
-				</tr>
-
-				<tr>
-					<td>-</td>
-					<td>Subtraction</td>
-				</tr>
-
-				<tr>
-					<td>*</td>
-					<td>Multiplication</td>
-				</tr>
-
-				<tr>
-					<td>/</td>
-					<td>Division</td>
-				</tr>
-
-				<tr>
-					<td>^</td>
-					<td>Exponentiation</td>
-				</tr>
-
-				<tr>
-					<td>%</td>
-					<td>Modulo</td>
-				</tr>
-
-				<tr>
-					<td>( )</td>
-					<td>Grouping</td>
+				<tr v-for="operator in operators" :key="operator.name">
+					<td>{{ operator.name }}</td>
+					<td>{{ operator.description }}</td>
 				</tr>
 			</tbody>
 		</BaseTable>
@@ -59,6 +29,48 @@ export default {
 	components: {
 		Reference,
 		BaseTable,
+	},
+	data() {
+		return {
+			operators: [
+				{
+					name: '+',
+					description: 'Add / Unary Plus',
+				},
+				{
+					name: '-',
+					description: 'Subtract / Unary Minus',
+				},
+				{
+					name: '*',
+					description: 'Multiply',
+				},
+				{
+					name: '/',
+					description: 'Divide',
+				},
+				{
+					name: '^',
+					description: 'Power',
+				},
+				{
+					name: '%',
+					description: 'Modulo',
+				},
+				{
+					name: '(',
+					description: 'Begin Group',
+				},
+				{
+					name: ')',
+					description: 'End Group',
+				},
+				{
+					name: ',',
+					description: 'Separate Argument',
+				},
+			],
+		};
 	},
 };
 </script>
