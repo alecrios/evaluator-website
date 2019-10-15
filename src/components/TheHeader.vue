@@ -1,7 +1,7 @@
 <template>
 	<header class="header">
 		<a href="/">
-			<img src="../assets/logo.svg" alt="Evaluator">
+			<img class="header__logo" src="../assets/logo.svg" alt="Evaluator">
 		</a>
 	</header>
 </template>
@@ -16,5 +16,10 @@ export default {
 .header {
 	display: flex;
 	justify-content: center;
+}
+
+.header__logo {
+	width: 11.25rem;
+	height: 3.25rem;
 }
 </style>
