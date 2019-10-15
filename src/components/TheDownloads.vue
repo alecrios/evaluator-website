@@ -65,7 +65,6 @@ export default {
 	padding: .75rem 1rem;
 	cursor: pointer;
 	margin-bottom: .75rem;
-	box-shadow: 0 .25rem .5rem 0 hsla(0, 0%, 0%, .25);
 	transition: background-color 250ms ease;
 }
 
