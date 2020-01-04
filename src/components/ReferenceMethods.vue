@@ -98,6 +98,10 @@ export default {
 					description: 'Returns subtracting 1 from EXP(x).',
 				},
 				{
+					name: 'FACTORIAL(x)',
+					description: 'Returns the factorial of x.',
+				},
+				{
 					name: 'FLOOR(x)',
 					description: 'Returns the largest integer less than or equal to a number.',
 				},
